@@ -62,7 +62,7 @@ if __name__=='__main__':
     time_now = datetime.now().strftime("%H:%M:%S.%f")
     if sign.text == '已签': 
         while True:
-            if time_now >= "21:30:00.000000" and time_now <= "21:30:01.000000":
+            if time_now >= "21:35:00.000000" and time_now <= "21:35:01.000000":
                 sign.click() # 对签到标签进行点击操作
                 time.sleep(2)
                 break # 退出循环 
