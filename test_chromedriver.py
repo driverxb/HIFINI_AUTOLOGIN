@@ -18,6 +18,6 @@ if __name__=='__main__':
     chromedriver = "d:/a/hifini_autologin/hifini_autologin/chromedriver"
     os.environ["webdriver.chrome.driver"] = chromedriver
     driver = webdriver.Chrome(options=chrome_options,executable_path=chromedriver)
-    driver.get("https://www.baidu.com")
-    print(driver.title.encode("utf-8"))
+    driver.get("https://hifini.com")
+    print(driver.title)
     driver.quit()
