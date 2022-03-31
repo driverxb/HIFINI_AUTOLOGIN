@@ -11,5 +11,5 @@ chromedriver = "d:/a/hifini_autologin/hifini_autologin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chrome_options=chrome_options,executable_path=chromedriver)
 driver.get("https://www.baidu.com")
-print(driver.title)
+print(driver.title.encode("utf-8"))
 driver.quit()
