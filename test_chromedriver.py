@@ -19,5 +19,5 @@ if __name__=='__main__':
     os.environ["webdriver.chrome.driver"] = chromedriver
     driver = webdriver.Chrome(options=chrome_options,executable_path=chromedriver)
     driver.get("https://hifini.com")
-    print(driver.title)
+    print(driver.title.encode("UTF-8"))
     driver.quit()
