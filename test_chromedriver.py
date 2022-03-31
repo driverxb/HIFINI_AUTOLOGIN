@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options # 这个是用来实现无可视化和反检测
-import os
+import os,sys
 
 if __name__=='__main__':
     # 设置Chromedriver参数,实现让selenium实现无界面和不被检测到的风险
@@ -19,5 +19,8 @@ if __name__=='__main__':
     os.environ["webdriver.chrome.driver"] = chromedriver
     driver = webdriver.Chrome(options=chrome_options,executable_path=chromedriver)
     driver.get("https://hifini.com")
+    print(sys.stdout.encoding)
+    print(sys.getdefaultencoding())
+    print(sys.getfilesystemencoding())
     print(driver.title.encode("gbk"))
     driver.quit()
