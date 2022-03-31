@@ -22,5 +22,5 @@ if __name__=='__main__':
     print(sys.stdout.encoding)
     print(sys.getdefaultencoding())
     print(sys.getfilesystemencoding())
-    print(driver.title.encode("utf-8"))
+    print(driver.title.encode("GB2312"))
     driver.quit()
