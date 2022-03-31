@@ -22,5 +22,5 @@ if __name__=='__main__':
     print(sys.stdout.encoding)
     print(sys.getdefaultencoding())
     print(sys.getfilesystemencoding())
-    print(driver.title.encode("cp1252"))
+    print(driver.title.encode("utf-8"))
     driver.quit()
