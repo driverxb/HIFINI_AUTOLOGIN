@@ -19,8 +19,10 @@ if __name__=='__main__':
     os.environ["webdriver.chrome.driver"] = chromedriver
     driver = webdriver.Chrome(options=chrome_options,executable_path=chromedriver)
     driver.get("https://hifini.com")
+    reload(sys)  
+    sys.setdefaultencoding('utf8')
     print(sys.stdout.encoding)
     print(sys.getdefaultencoding())
     print(sys.getfilesystemencoding())
-    print(driver.title.decode("gbk"))
+    print(driver.title.encode("utf8"))
     driver.quit()
